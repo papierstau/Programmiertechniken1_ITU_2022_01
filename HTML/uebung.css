@@ -1,8 +1,63 @@
 /* class */
 .ueber{
     color: blueviolet;
+    /* entweder  */
+    /* border: 2px solid black; */
+    /* oder */
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    background-image: url(bild.jpg);
 }
 /* ID */
 #headline{
     color: coral;
+
+}
+@viewport{
+    width: 1450px;
+}
+/* Ein Link kann mehrer "Zustände" haben */
+a:link{
+    color: green;
+    background-color: azure;
+    text-decoration: none;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    
+    background-color: red;
+    
+}
+/* "3d" Style */
+#card{
+    background-color: blue;
+    width: 500px;
+    height: 500px;
+}
+#card:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 3px
+    rgba(31, 31, 31, 0.2);
+    transition: 0.4s;
+    z-index: 1;
+    
+}
+/* Tabellen formatiert */
+table, th, td{
+    border: 1px solid black;
+}
+tr:nth-child(odd){
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    background-color: #d6eeee;
+}
+input{
+    display: block;
+    justify-content: left;
+}
+:invalid{
+    border-color: red;
 }
