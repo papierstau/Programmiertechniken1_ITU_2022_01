@@ -7,8 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    
     <?php
-        include 'for.php';
+
+        
+        include 'inc/for.php';
    
         #Ich bin Zeilenkommentar
         //Ich bin ebenfalls ein Zeilenkommentar
