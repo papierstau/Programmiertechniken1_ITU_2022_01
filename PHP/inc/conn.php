@@ -1,11 +1,12 @@
 <?php
     // Datenbankverbindung
     try{
+        $servername = 'localhost';
         $username = 'root';
         $password = '';
         $dbName = 'beispiel';
 
-        $connection = new PDO('mysql:host=localhost; dbname=beispiel;charset=utf8', 'root', '');
+        $connection = new PDO('mysql:host='.$servername.'; dbname='.$dbName.';charset=utf8', $username, $password);
 
         $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
