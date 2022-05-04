@@ -48,10 +48,6 @@
 
     helperFunction();
 
-    function prozentRechnung($x , $y){
-        return ($x / $y) * 100;
-    }
-
-    echo prozentRechnung(100, 300);
+    
     
 ?>
