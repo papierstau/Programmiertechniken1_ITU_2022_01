@@ -5,14 +5,14 @@ CREATE DATABASE Tablename;
 DROP DATABASE Tablename;
 
 --Erstellt eine Tabelle
-CREATE TABLE Tablename{
+CREATE TABLE Tablename(
     ID INT AUTO_INCREMENT,
     userName VARCHAR(255),
     email VARCHAR(255),
     PRIMARY KEY(ID),
     CONSTRAINT UC_Tablenamen UNIQUE (ID, userName)
     --FOREIGN KEY(Columnname)
-};
+);
 
 --Löscht die Tabelle
 DROP TABLE Tablename;
